@@ -1,11 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Dosis:wght@500&display=swap');
 
 body {
+  background:url("../src/img/whateveryouwant.jpg")
+  no-repeat center center fixed #3e510f61;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode:overlay;
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Dosis', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:#fff;
+}
+
+p {
+  letter-spacing:.1em;
+}
+
+h1 {
+  font-family: 'Comforter Brush', cursive;
+  font-size: 6rem;
+  text-shadow:5px 2px 4px #0f5132;
 }
 
 code {
@@ -15,11 +33,20 @@ code {
 
 .card {
   width:500px;
+  color:#000;
+  background-color:#ffffffd1;
+  padding:10px;
+  margin:10px;
 }
 .container{
   text-align:center;
 }
 
-.rdtPicker {
+.rdt {
   width:500px;
+  padding:10px 10px 10px 15px;
+}
+
+.headContainer {
+  padding: 3% 0 2% 0;
 }

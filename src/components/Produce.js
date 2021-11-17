@@ -14,7 +14,7 @@ function Produce(props){
 
 Produce.propTypes = {
   month: PropTypes.string,
-  selection: PropTypes.string,
+  selection: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default Produce;

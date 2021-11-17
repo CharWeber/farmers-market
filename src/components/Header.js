@@ -4,7 +4,9 @@ import NavButtons from "./NavButtons";
 function Header(){
   return(
     <React.Fragment>
-    <p>Avery's Organics</p>
+      <div class="headContainer">
+      <h1>Avery's Organics</h1>
+      </div>
     <NavButtons />
     </React.Fragment>
   )

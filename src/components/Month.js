@@ -259,6 +259,7 @@ const availableProduce = [
       "Hazelnuts",
       "Pears",
       "Broccoli",
+      "Elves",
       "Carrots",
       "Cauliflower",
       "Garlic",
@@ -270,13 +271,14 @@ const availableProduce = [
   },
 ];
 
-function Month() {
+function Month(props) {
   return(
     <React.Fragment>
-      {availableProduce.map((produce, index) =>
+      {availableProduce.filter(month => month.month === props.month).map((produce, index) =>
         <Produce month={produce.month}
         selection = {produce.selection} />
       )}
+      <p>blagh</p>
     </React.Fragment>
     );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Day from './Day.js';
+// import PropTypes from "prop-types";
 
 const marketSchedule = [  
   {  
@@ -40,17 +41,22 @@ const marketSchedule = [
   }
 ];
 
-function Location(){
+// const dailyschedule = marketSchedule.filter(prop.date)
+
+function Location(props){
   return (
     <React.Fragment>
-      {marketSchedule.map((schedule, index) =>
+      {marketSchedule.filter(day => day.day === props.date).map((schedule, index) =>
         <Day day={schedule.day}
         location={schedule.location}
         hours={schedule.hours}
         booth={schedule.booth}/>
       )}
+      <p>{typeof(props.date)}</p>
     </React.Fragment>
   );
 }
+
+
 
 export default Location;
